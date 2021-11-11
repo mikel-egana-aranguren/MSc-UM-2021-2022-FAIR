@@ -1,6 +1,6 @@
 # Publicación de datos siguiendo principios FAIR mediante Linked Data
 
-Este material es parte del Máster de Bioinformática de la Universidad de Murcia, curso 2020-2021. El objetivo del material es explicar los principios FAIR (Findable, Accesible, Interoperable, Reusable) para publicar datos científicos, así como el método Linked Data como aproximación práctica.
+Este material es parte del Máster de Bioinformática de la Universidad de Murcia, curso 2021-2022. El objetivo del material es explicar los principios FAIR (Findable, Accesible, Interoperable, Reusable) para publicar datos científicos, así como el método Linked Data como aproximación práctica.
 
 El material consta de:
 
