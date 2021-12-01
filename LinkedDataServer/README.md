@@ -24,7 +24,7 @@ Installation:
 
 ## Configuration
 
-There is no need for further configuration, since the specific configuration for Trifid to communicate with Blazegraph through the [SPARQL protocol](https://www.w3.org/TR/sparql11-protocol/) has already been defined in the file `blazegraph-config.json`:
+There is no need for further configuration, since the specific configuration for Trifid to communicate with Blazegraph through the [SPARQL protocol](https://www.w3.org/TR/sparql11-protocol/) has already been defined in the file `blazegraph-config.json` (Assuming blazegraph is listening in `localhost:9999`):
 
 ```json
 {
@@ -49,9 +49,10 @@ For example to change the port in which trifid will listen, add the following:
 
 ## Usage
 
-* Execute Blazegraph at `/blazegraph`: `java -server -Xmx4g -jar blazegraph.jar`.
+* Execute Blazegraph at `/blazegraph`: `java -server -Xmx4g -jar blazegraph.jar`. To change the port in which Blazegraph will listen, use `java -server -Xmx4g -Djetty.port=8181 -jar blazegraph.jar`.
+* In the "Namespaces" tab, create namespace `um` and activate (click in "use").
 * Load data from file `data/update.ttl` into Blazegraph at `http://localhost:9999/`, in the `UPDATE` tab.
-* Exec trifid at `/trifid` (Note that the configuration si the already defined file, in the directory above): `./server.js --config=../blazegraph-config.json`.
+* Exec trifid at `/trifid` (Note that the configuration is the already defined file, in the directory above): `./server.js --config=../blazegraph-config.json`.
 * To test content negotiation, try `curl --header "Accept: text/turtle" http://localhost:8080/data/mikel`. Some data should be returned.
 * To test the web frotend go to `http://localhost:8080/data/mikel` with the browser and the following should appear:
 
