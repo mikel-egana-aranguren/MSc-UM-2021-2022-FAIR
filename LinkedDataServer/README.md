@@ -9,17 +9,16 @@ The bundle comprises:
 * [Blazegraph](https://github.com/blazegraph/database) as Triple Store. The 2.1.6 Release Candidate JAR file is directly included in `/blazegraph/blazegraph.jar`.
 * [Trifid](https://github.com/zazuko/trifid) as frontend for web browsing and content negotiation, i.e. "dereferencing". The Trifid original GitHub repo is added as a submodule, for updates, in `/trifid`.
 
-## Installation
+## Dependencies
 
-This has been tested in Ubuntu 20.04 LTS but it should probably work in other settings.
-
-Dependencies:
+This is the setting for Ubuntu 20.04 LTS but it should probably work in other settings:
 
 * Java. It has been tested with `OpenJDK Runtime Environment (build 1.8.0_275-8u275-b01-0ubuntu1~20.04-b01)`. Install Java with your favourite method.
 * Node JS. It has been tested with `nodejs (10.19.0~dfsg-3ubuntu1)`. To install Node JS in ubuntu simply run `apt-get update && apt-get install nodejs` (NOTE: in some systems the [nvm installation](https://www.digitalocean.com/community/tutorials/como-instalar-node-js-en-ubuntu-18-04-es) works better).
 
-Installation:
+## Installation
 
+* Clone this repo, including the Trifid submodule: `git clone --recurse-submodules git@github.com:mikel-egana-aranguren/MSc-UM-2021-2022-FAIR.git`
 * To install Trifid, go to `/trifid` and run `npm install`.
 
 ## Configuration
