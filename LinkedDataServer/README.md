@@ -48,7 +48,7 @@ For example to change the port in which trifid will listen, add the following:
 
 ## Usage
 
-* Execute Blazegraph at `/blazegraph`: `java -server -Xmx4g -jar blazegraph.jar`. To change the port in which Blazegraph will listen, use `java -server -Xmx4g -Djetty.port=8181 -jar blazegraph.jar`.
+* Execute Blazegraph at `/blazegraph`: `java -server -Xmx4g -jar blazegraph.jar`. To change the port in which Blazegraph will listen, use `java -server -Xmx4g -Djetty.port=8181 -jar blazegraph.jar` (Also change the port at `sparqlEndpointUrl` in `blazegraph-config.json`).
 * In the "Namespaces" tab, create namespace `um` and activate (click in "use").
 * Load data from file `data/update.ttl` into Blazegraph at `http://localhost:9999/`, in the `UPDATE` tab.
 * Exec trifid at `/trifid` (Note that the configuration is the already defined file, in the directory above): `./server.js --config=../blazegraph-config.json`.
