@@ -1,12 +1,24 @@
 # Procedure
 
-`java -server -Xmx4g -jar blazegraph.jar`
+`java -server -Xmx4g -Djetty.port=8181 -jar blazegraph.jar`
 
-Upload data and metadata
+Create Namespace `um` (quads!), `use`
+
+Upload data (`GenesUM.nq`), Named Graph:
 
 ```sparql
 SELECT *
 WHERE {
+    GRAPH ?g {?s ?p ?o}
+}
+```
+
+Upload metadata (`MetadataGenes.ttl`):
+
+```sparql
+SELECT *
+WHERE {
+    {?g ?r ?t}
     GRAPH ?g {?s ?p ?o}
 }
 ```
@@ -26,6 +38,10 @@ WHERE {
 
 `curl -H "Accept: application/ld+json" http://localhost:8080/dataset/UMGenesDataset`
 
+dcat:distribution <http://localhost:8080/csv/genes>
+
 `service apache2 restart`
 
-`ln -s /home/mikel/EHU-LSI/Docencia/2020-2021/MSc-UM/MSc-UM-2020-FAIR/LinkedDataServer/data/GenesUM.csv GenesUM.csv`
+`cd /var/www/html`
+
+`ln -s /home/mikel/EHU-LSI/Docencia/2021-2022/MSc-UM/MSc-UM-2021-2022-FAIR/LinkedDataServer/data/GenesUM.csv GenesUM.csv`
