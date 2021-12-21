@@ -41,6 +41,8 @@
             <li>Publicar datos FAIR</li>
             <li>Recursos sobre FAIR</li>
             <li>Linked Data</li>
+            <li>Ejemplo práctico</li>
+            <li>Proyecto a realizar</li>
         </ol>
     </section>
 
@@ -165,7 +167,7 @@
 
     <section class="slide">
         <h2>HTTP URIs</h2>
-        <p>URI: Uniform Resource Identifier</p>
+        <p>URI: Uniform Resource Identifier (<a href="https://datatracker.ietf.org/doc/html/rfc3986/">RFC 3986</a>)</p>
         <p>Identifica un recurso (URL: Localiza un documento)</p>
         <p>HTTP: podemos usar HTTP para acceder (<b>Resolver</b>) a esa URI (dominio)</p>
     </section>
@@ -208,9 +210,10 @@
 
     <section class="slide">
         <h2>F3. Metadata clearly and explicitly include the identifier of the data it describes</h2>
-        <p>"https://um.es/dataset/UMGenesDataset was generated on 2020-12-10T13:00:07"</p> 
-        <p>"https://um.es/dataset/UMGenesDataset is about genes"</p>
-        <p>"https://um.es/dataset/UMGenesDataset relates to humans"</p>
+        <p>"UMGenesMetadata has dataset UMGenesDataset"</p>
+        <p>"UMGenesMetadata was generated on 2020-12-10T13:00:07"</p> 
+        <p>"UMGenesMetadata is about genes"</p>
+        <p>"UMGenesMetadata relates to humans"</p>
         <p>etc.</p>
     </section>
 
@@ -224,14 +227,14 @@
     <section class="slide">
         <h2>Indexación</h2>  
         <p>Google indexa de manera "básica" ...</p> 
-        <p>... pero cada vez menos, gracias a <a href="https://schema.org/">Schema</a> (Ontología muy ligera para describir datos en la web) y <a ref="https://www.w3.org/TR/json-ld11/">JSON-LD</a></p>
+        <p>... pero cada vez menos, gracias a <a href="https://schema.org/">Schema</a> (Ontología muy ligera para describir datos en la web) y <a href="https://www.w3.org/TR/json-ld11/">JSON-LD</a></p>
         <p><a href="https://bioschemas.org/">Bioschemas</a> (?)</p>
         <p>Hay que intentar publicar buenos metadatos para una indexación adecuada (por Google o cualquier agente que <i>entienda</i> las ontologías que usamos)</p>
     </section>
 
     <section class="slide">
         <h2>Accesible</h2>
-        <p>Identified data should be accessible, optimally by both humans and machines, using a clearly-defined protocol and, if necessary, with clearly-defined rules for authorization/authentication</p>
+        <p>Identified data should be accessible, optimally by both humans and <b>machines</b>, using a clearly-defined protocol and, if necessary, with clearly-defined rules for authorization/authentication</p>
     </section>
 
     <section class="slide">
@@ -264,7 +267,7 @@
     </section>
 
     <section class="slide">
-        <h2>I1. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.</h2>
+        <h2>I1. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation</h2>
         <p>Las máquinas también tienen que <i>entender</i> los (meta)datos</p>
         <p>Por ejemplo OWL (<a href="https://www.w3.org/TR/owl2-overview/">Web Ontology Language</a>)</p>
     </section>
@@ -328,7 +331,7 @@
     <section class="slide">
         <h2>R1.3. (Meta)data meet domain-relevant community standards</h2>
         <p>Respetar las buenas prácticas, estándares, vocabularios etc. de la comunidad científica que trabaja con esos datos</p>
-        <p>Por ejemplo <a href="http://fged.org/projects/minseqe/">Minimum Information about a high-throughput SEQuencing Experiment</a></p>
+        <p>Por ejemplo <a href="https://fairsharing.org/standards/?q=&page=1">FAIR Sharing Standards</a></p>
     </section>
 
     <section class="slide">
@@ -373,7 +376,7 @@
     </section>
 
     <section class="slide">
-        <h2>Práctica</h2>
+        <h2>Ejemplo práctico</h2>
         <p>"FAIRificar" un dataset de ejemplo</p>
         <p>Proceso vertical: intentar cubrir todos los pasos técnicos, sin entrar en detalles de contenidos</p>
         <p>Ejemplos muy simples, nada realistas</p>
@@ -498,7 +501,7 @@
     </section>
 
     <section class="slide">
-        <h2>Tareas</h2>
+        <h2>Proyecto a realizar</h2>
         <p>Reproducir en local este proceso</p>
         <p>Entregable: reproducir el proceso con ciertos cambios (<a href="../ENTREGABLE.md">ENTREGABLE.md</a>)</p>
     </section>
